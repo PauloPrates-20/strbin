@@ -9,7 +9,7 @@ void atob(const char *s) {
 
         if(isspace(*s)) printf(" ");
         else {
-            for(uint8_t i = 8; i >= 0; i--) {
+            for(int i = 8; i >= 0; i--) {
                 printf("%d", ((n >> i) & 1));
             }
             if(!isspace(*(s + 1))) {
